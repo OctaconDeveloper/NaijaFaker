@@ -1,0 +1,14 @@
+{
+    "name": "octacondeveloper/naija-faker",
+    "description": "A PHP library that generates fake data for user to use in the project. A local version of Fzaninotto's faker for Nigerian developers quick data that they can relate to",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "OctaconDeveloper",
+            "email": "kaakadev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
