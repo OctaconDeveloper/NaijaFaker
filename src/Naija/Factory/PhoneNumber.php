@@ -1,4 +1,5 @@
 <?php
+
 namespace NaijaFaker\Factory;
 
 class PhoneNumber extends \NaijaFaker\Load
@@ -8,6 +9,7 @@ class PhoneNumber extends \NaijaFaker\Load
 	'MTN','AIRTEL','GLO','ETISALAT','STARCOMMS', 'VISAFONE'
 	);
 
+	
 	protected static $allPrefix = array(
 		'0803', '0703', '0903', '0806', '0706', '0813', '0810', '0814', '0816','0805', '0705', '0905', '0807', '0815', '0811', '0905','0802', '0902', '0701', '0808', '0708', '0812','0809', '0909', '0817', '0818','0819', '07028', '07029','0704', '07025', '07026'
 	);
@@ -43,7 +45,7 @@ class PhoneNumber extends \NaijaFaker\Load
 		'Aba' =>	82,
 		'Abakaliki' =>	43,
 		'Abeokuta' =>	39,
-		'Abuja' =>	9,
+		'Abuja' =>	'09',
 		'Ado Ekiti' =>	30,
 		'Agbor' =>	55,
 		'Ahoada' =>	86,
@@ -52,7 +54,7 @@ class PhoneNumber extends \NaijaFaker\Load
 		'Auchi' =>	57,
 		'Awka' =>	48,
 		'Azare' =>	71,
-		'Badagry' =>	1,
+		'Badagry' =>	'01',
 		'Bauchi' =>	77,
 		'Benin' =>	52,
 		'Birnin' =>	68,
@@ -63,7 +65,7 @@ class PhoneNumber extends \NaijaFaker\Load
 		'Gombe' =>	72,
 		'Gusau' =>	63,
 		'Hadejia' =>	78,
-		'Ibadan' =>	2,
+		'Ibadan' =>	'02',
 		'Ijebu Ode' =>	37,
 		'Ikare' =>	50,
 		'Ile Ife' =>	36,
@@ -76,7 +78,7 @@ class PhoneNumber extends \NaijaFaker\Load
 		'Katsina' =>	65,
 		'Kontagora' =>	67,
 		'Lafia' =>	47,
-		'Lagos' =>	1,
+		'Lagos' =>	'01',
 		'Lokoja' =>	58,
 		'Maiduguri' =>	76,
 		'Makurdi' =>	44,

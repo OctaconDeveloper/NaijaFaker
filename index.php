@@ -1,14 +1,23 @@
 <?php
-namespace NaijaFaker;
+// namespace NaijaFaker;
+
 
 require_once 'vendor/autoload.php';
+
+use NaijaFaker\Generator;
+
 // include 'src/Naija/Generator/PhoneNumber.php';
-use NaijaFaker\Generator\PhoneNumber;
 
-$phone = new PhoneNumber();
+$faker = new Generator();
 
-var_dump($phone);
-echo "<br/>"; 
-echo "Hello"; 
+var_dump($faker);
 echo "<br/>";
-print_r($phone->randomPhoneNumber());
+echo "Hello";
+echo "<br/>";
+echo "Random Phone ::->  ";
+// ($format = "normalFormat"  or $network = MTN || GLO || AIRTEL  || Lagos etc )
+print_r($faker->phoneNumber($network = 'MTN')); 
+echo "<br/>";
+echo "Random Landline ::-> ";
+// ($format = "normalFormat"  or $areaCode = Aba || Lagos etc)
+print_r($faker->landLine($areaCode = 'Lagos')); 

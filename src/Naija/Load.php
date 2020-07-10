@@ -8,14 +8,19 @@
 
 		private static $defaultNumber = '1234567890';
 
+		protected static function getSingle(array $array, $key)
+		{
+			return $array[$key];
+		}
+
 		protected static function getRandom(array $array)
 		{
 			return $array[array_rand($array)];
 		}
 
 		protected static function numberFormater(
-			$number = '1234567890',
-			$format = '####',
+			$number = '',
+			$format = '############',
 			$affix = array()
 		)
 		{
@@ -23,10 +28,10 @@
 
 			$count = substr_count($format, "#");
 
-			for ($i =0; $i < $count; $i++){
-				$newFormat .= str_split($number)[$i];
+			for ($i = 0; $i < $count; $i++){
+				$newFormat  .= str_split($number)[$i];
 			}
-	        return trim(strtok(self::stringReplace($format, $affix), '#').$newFormat);
+			return trim(strtok(self::stringReplace($format, $affix), '#').$newFormat);
 		}
 
 		protected static function stringReplace(string $string, array $replace = [] )

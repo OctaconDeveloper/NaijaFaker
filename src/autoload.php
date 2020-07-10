@@ -1,16 +1,41 @@
 <?php
+/**
+ * An example of a project-specific implementation.
+ *
+ * After registering this autoload function with SPL, the following line
+ * would cause the function to attempt to load the \Foo\Bar\Baz\Qux class
+ * from /path/to/project/src/Baz/Qux.php:
+ *
+ *      new \Foo\Bar\Baz\Qux;
+ *
+ * @param string $class The fully-qualified class name.
+ * @return void
+ */
+spl_autoload_register(function ($class) {
 
-spl_autoload_register(function($className) {
+    // project-specific namespace prefix
+    $prefix = 'NaijaFaker\\';
 
-	$className = str_replace("\\", DIRECTORY_SEPARATOR, $className);
-	$fileName =  __DIR__  . '/class/' . $className . '.php';
+    // base directory for the namespace prefix
+    $base_dir = __DIR__ . '/src/';
 
-	 if (file_exists($fileName)) {
-        require $fileName;
-
-        return true;
+    // does the class use the namespace prefix?
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        // no, move to the next registered autoloader
+        return;
     }
 
-    return false;
+    // get the relative class name
+    $relative_class = substr($class, $len);
 
+    // replace the namespace prefix with the base directory, replace namespace
+    // separators with directory separators in the relative class name, append
+    // with .php
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+
+    // if the file exists, require it
+    if (file_exists($file)) {
+        require $file;
+    }
 });
