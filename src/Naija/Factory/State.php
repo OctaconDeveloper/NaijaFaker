@@ -1,14 +1,14 @@
 <?php
 
 namespace NaijaFaker\Factory;
-
+ 
 class State extends \NaijaFaker\Load
 {
     protected static $Zones = array(
         'SW','SS','SE','NE','NC', 'NW'
     );
 
-    protected static $SSZones = array(
+    protected static $SSZone = array(
         'NG-AK' => 'Akwa Ibom',
         'NG-BY' => 'Bayelsa',
         'NG-CR' => 'Cross River',
@@ -17,7 +17,7 @@ class State extends \NaijaFaker\Load
         'NG-ED' => 'Edo',
     );
 
-    protected static $SEZones = array(
+    protected static $SEZone = array(
         'NG-AB' => 'Abia',
         'NG-AN' => 'Anambra',
         'NG-EB' => 'Ebonyi',
@@ -25,7 +25,7 @@ class State extends \NaijaFaker\Load
         'NG-IM' => 'Imo'
     );
 
-    protected static $NWZones = array(
+    protected static $NWZone = array(
         'NG-JI' => 'Jigawa',
         'NG-KD' => 'Kaduna',
         'NG-KN' => 'Kano',
@@ -35,7 +35,7 @@ class State extends \NaijaFaker\Load
         'NG-ZA' => 'Zamfara'
     );
 
-    protected static $NEZones = array(
+    protected static $NEZone = array(
         'NG-AD' => 'Adamawa',
         'NG-BA' => 'Bauchi',
         'NG-BO' => 'Borno',
@@ -44,7 +44,7 @@ class State extends \NaijaFaker\Load
         'NG-YO' => 'Yobe'
     );
 
-    protected static $NCZones = array(
+    protected static $NCZone = array(
         'NG-BE' => 'Benue',
         'NG-KO' => 'Kogi',
         'NG-KW' => 'Kwara',
@@ -54,7 +54,7 @@ class State extends \NaijaFaker\Load
         'NG-FCT' => 'FCT Abuja'
     );
 
-    protected static $SWZones = array(
+    protected static $SWZone = array(
         'NG-EK' => 'Ekiti',
         'NG-LA' => 'Lagos',
         'NG-OG' => 'Ogun',
@@ -102,5 +102,5 @@ class State extends \NaijaFaker\Load
         'NG-DE' => 'Delta',
         'NG-ED' => 'Edo'
     );
-
+ 
 }

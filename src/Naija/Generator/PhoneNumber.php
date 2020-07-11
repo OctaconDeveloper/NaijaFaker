@@ -6,7 +6,6 @@ class PhoneNumber extends \NaijaFaker\Factory\PhoneNumber
  
  private $networkCode;
  private $regionCode;
- private $name;
  private $format;
 
 	protected static $extraFormat = array(
@@ -68,14 +67,6 @@ class PhoneNumber extends \NaijaFaker\Factory\PhoneNumber
         'fullFormat'
     );
 
-
-	 public function __construct($networkCode = null, $format = null)
-    {
-		$this->networkCode = $networkCode;
-		// $this->regionCode = $regionCode;
-		// $this->name = $name;
-		$this->format = $format;
-    }
     // Example 070582546662
     public function randomPhoneNumber($format = null)
     {
