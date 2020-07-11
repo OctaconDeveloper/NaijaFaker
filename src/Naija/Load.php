@@ -18,6 +18,12 @@
 			return $array[array_rand($array)];
 		}
 
+		protected static function getRandomWithKey(array $array)
+		{
+			$key = array_rand($array);
+			return $array[$key].' ('.$key.')';
+		}
+
 		protected static function numberFormater(
 			$number = '',
 			$format = '############',

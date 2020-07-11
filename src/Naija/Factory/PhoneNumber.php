@@ -105,24 +105,6 @@ class PhoneNumber extends \NaijaFaker\Load
 
 );
 
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	public static function numberGenerator($count = 8)
 	{
 		$v = rand(40, 4000) * time();
