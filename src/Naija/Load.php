@@ -55,4 +55,14 @@
 			$glue = implode('-',array_replace($toReplace,self::$replace)); //joins to array back
 			return $glue; //return a glue with new replacements
 		}
+
+		protected static function transform(string $string)
+		{
+			$data = explode(" ", $string);
+			return 
+			sizeof($data) > 1 ?
+			strtolower($data[0]).ucfirst(strtolower($data[1]))
+			:
+			strtolower($data[0]);
+		}
 	}
