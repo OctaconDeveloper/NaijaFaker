@@ -22,5 +22,5 @@ class LocalGovernment extends \NaijaFaker\Factory\LocalGovernment
             $selectedState = self::transform(self::getRandom(static::$States)).'State';         
         }
         return self::getRandom(static::${$selectedState});
-    } 
-}
+    }  
+} 

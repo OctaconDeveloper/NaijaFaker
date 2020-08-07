@@ -6,7 +6,7 @@ class PhoneNumber extends \NaijaFaker\Load
 {
 
 	protected static $providerType = array(
-	'MTN','AIRTEL','GLO','ETISALAT','STARCOMMS', 'VISAFONE'
+		'MTN','AIRTEL','GLO','ETISALAT','STARCOMMS', 'VISAFONE'
 	);
 
 	

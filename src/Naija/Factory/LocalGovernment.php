@@ -918,4 +918,12 @@ class LocalGovernment extends \NaijaFaker\Load
         'Zurmi'
     );
 
+    protected static $fctAbujaState = array(
+        'Abaji',
+        'Abuja Municipal',
+        'Bwari',
+        'Gwagwalada',
+        'Kuje',
+        'Kwali'
+    );
 }
