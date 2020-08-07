@@ -65,4 +65,17 @@
 			:
 			strtolower($data[0]);
 		}
+
+		protected static function refactor(string $string)
+		{
+			return 
+			strtolower($string);
+		}
+
+		protected static function trimpos(string $string)
+		{
+			return strtoupper(mb_substr($string, 0, 1, 'utf-8')).'. '.strtoupper(mb_substr($string, 1, 1, 'utf-8')).'.';
+		}
+
+		
 	}
