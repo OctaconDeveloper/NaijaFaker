@@ -3,10 +3,15 @@ A PHP library that generates fake data for user to use in the project. A local v
 
  
 # Installation 
+```
 composer require octacondeveloper/naija-faker
+```
 
+```
 require_once 'vendor/autoload.php';
+```
 
+```
 use NaijaFaker\Generator;
-
+```
 
