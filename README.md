@@ -17,7 +17,9 @@ $faker = new Generator();
 ```
 ### `Parameters`
   $network =  ['MTN','AIRTEL','GLO','ETISALAT','STARCOMMS', 'VISAFONE']
+  
   $zone = ['SW','SS','SE','NE','NC', 'NW']
+  
   $tribe = ['Igbo','Yoruba','Hausa']
   
 
