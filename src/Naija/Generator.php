@@ -9,10 +9,6 @@ use NaijaFaker\Generator\Person as person;
 
 class Generator {
 
-    // protected static $service = array(
-    //     'PhoneNumber', 
-    // );
- 
     public function phoneNumber($args = null)
     {
         return phone::randomPhoneNumber($args);

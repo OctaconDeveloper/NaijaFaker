@@ -38,9 +38,6 @@ class PhoneNumber extends \NaijaFaker\Load
 		 '0704', '07025', '07026'
 	);
 
-
-
-
 	protected static $areaCode = array(
 		'Aba' =>	82,
 		'Abakaliki' =>	43,
@@ -103,7 +100,7 @@ class PhoneNumber extends \NaijaFaker\Load
 		'Yola' =>	75,
 		'Zaria' =>	69,
 
-);
+	);
 
 	public static function numberGenerator($count = 8)
 	{

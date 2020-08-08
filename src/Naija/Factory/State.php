@@ -51,7 +51,7 @@ class State extends \NaijaFaker\Load
         'NG-NA' => 'Nasarawa',
         'NG-NI' => 'Niger',
         'NG-PL' => 'Plateau',
-        'NG-FCT' => 'FCT Abuja'
+        'NG-FCT' => 'Abuja'
     );
 
     protected static $SWZone = array(

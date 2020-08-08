@@ -4,9 +4,9 @@ namespace NaijaFaker\Generator;
 class PhoneNumber extends \NaijaFaker\Factory\PhoneNumber
 { 
  
- private $networkCode;
- private $regionCode;
- private $format;
+    private $networkCode;
+    private $regionCode;
+    private $format;
 
 	protected static $extraFormat = array(
         '+234-{{networkCode}}-###-####',
